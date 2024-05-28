@@ -13,7 +13,7 @@ We harness the power of BeautifulSoup, a game-changing web scraping tool. With i
 ## Data Cleaning
 In the process of data cleaning, we tackle the challenge of handling null values. By diligently filling these gaps with the placeholder "None," we ensure the integrity of our data. This meticulous approach enables us to conduct accurate analysis and make informed decisions based on complete and reliable information.
 
-##Data Analysis
+## Data Analysis
 During our thorough data analysis, we have made fascinating discoveries. Some watches exhibit variations in colors, while others may lack certain features and details. Moreover, we have come across duplicated watches listed under different brands, adding an unexpected twist to our exploration of the watch dataset. These insights deepen our understanding of the intricate world of Jaquet Droz watches and open doors to further exploration and analysis.
 
 ## Link to the website:
