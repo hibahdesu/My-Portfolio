@@ -1,0 +1,38 @@
+🏆 Exciting News! 🏆
+We are thrilled to share our recent participation as a team in an exhilarating Kaggle competition organized by Tuwaiq Academy, a renowned institution dedicated to advancing education and empowering aspiring professionals. The competition aimed to revolutionize the selection process for their prestigious advanced training programs, and together, we had the privilege to be part of this transformative journey.
+
+🌟Team members: 
+	👤 @Ammar
+	👤 @Shahad
+	👤 @Hibah
+
+🔗Competition code URL: https://www.kaggle.com/code/shahodahali/tuwaik-real-final-team-work
+
+🔗 Here is a video description of the project: https://www.youtube.com/watch?v=0rt4qCfxgyY
+
+🎯 Competition Overview:
+In the face of fierce competition from millions of applicants, Tuwaiq Academy sought to streamline their selection process by leveraging the power of data science. The challenge was to develop a predictive model capable of accurately identifying individuals with the highest likelihood of successfully completing their rigorous training curriculum. By achieving this, the academy aimed to optimize resource allocation and make a lasting impact on the education landscape.
+
+📊 Dataset Details:
+For this exhilarating competition, Tuwaiq Academy provided a comprehensive dataset encompassing registration information for accepted trainees across a diverse range of training programs. The dataset included a vital completion target column, shedding light on each trainee's journey towards program completion.
+
+🎯 Objective:
+The primary objective of this competition was to develop a robust and reliable model capable of identifying candidates with the utmost potential for successful program completion. By accurately identifying individuals who possess the necessary qualities and dedication, Tuwaiq Academy aimed to enhance the efficiency of their selection process and ensure the most deserving candidates receive the opportunity to excel.
+
+🏅 Outcome:
+The impact of this competition extended beyond the confines of a single event. Winning models had the potential to significantly enhance the selection process's efficiency, enabling Tuwaiq Academy to optimize resourceallocation effectively. Through this, the academy aimed to create a lasting impact on the education landscape, empowering countless aspiring professionals to achieve their dreams.
+
+💡 About the Project:
+To tackle this challenge head-on, we collaborated as a team, leveraging our collective expertise in data analysis, predictive modeling, and advanced machine learning techniques. Together, we employed a comprehensive approach to handle the complexities of the dataset and develop a high-performing predictive model.
+
+🔍 Cleaning Data & Feature Engineering:
+During the competition, we encountered various challenges related to missing and uncleaned data. This happened because the user was free to put any value as they liked, which posed a problem. To ensure the reliability of our model, we employed a range of approaches and techniques. This included thorough identification and assessment of missing and uncleaned data points, applying appropriate imputation techniques, and employing advanced machine learning models for data imputation. Additionally, we performed data cleaning and transformation, including outlier removal, format correction, and feature standardization. Our meticulous data preprocessing methods aimed to optimize the quality and reliability of the dataset, minimizing biases and errors that could affect model performance.
+We also created new variables from the data that helped us predict whether a trainer would continue or not. These variables were carefully engineered to capture relevant information and improve the predictive power of our model. By leveraging our expertise in feature engineering, we aimed to extract meaningful insights from the dataset and enhance the overall performance of our predictive model.
+By addressing missing and uncleaned data, as well as creating new variables, we ensured that our model was built on a solid foundation, maximizing its accuracy and effectiveness in predicting trainee success.
+
+🚀 Conclusion:
+Participating in this Kaggle competition organized by Tuwaiq Academy as a team was an exhilarating and rewarding experience. Collaborating and combining our skills and expertise allowed us to tackle complex data challenges and develop a powerful predictive model. We are immensely proud of our efforts invested in this competition and the impact our work can have on optimizing the selection process for Tuwaiq Academy's advanced training programs.
+We look forward to future projects where we can continue leveraging data science to drive positive change and make a lasting impact on the education sector.
+#Kaggle #DataScience #PredictiveModeling #EducationEmpowerment #TUWAIQACADEMY #TUWAIQ_ACADEMY #TUWAIQ-ACADEMY #TUWAIQ @TUWAIQ_ACADEMY @TUWAIQ #Machine_learning #ML #DataAnalysis #Data_analysis
+
+
