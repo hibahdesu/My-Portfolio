@@ -1,0 +1,1173 @@
+:root {
+    --green: #ABD8D3;
+    --pink: #FFD3E7;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --white: #fff;
+    --heading:  'Akaya Telivigala', cursive;
+    --heading1: 'Courgette', cursive;
+    --heading2: 'Nunito Sans', sans-serif;
+    --heading3: 'Roboto', sans-serif;
+    --white2: rgb(255, 255, 255);
+    --pinktwo: #fc328d62;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html {
+    /*
+    background: url(n3.jpg);
+    */
+    background-color: #f9f2f4;
+    background-size: cover;
+   background-repeat: no-repeat;
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+}
+header {
+    /*
+    position: fixed;
+    top: 6rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    */
+    position: relative;
+    margin-top: 5rem;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    background: var(--white);
+    /*
+    background-image: url(ba2.png);
+    
+   background-repeat: repeat-x no-repeat;
+   background-position: 0 4px;
+    */
+    
+    align-items: center;
+    padding: 1rem 7% 1rem 5%;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+header {
+    border-top: 3px solid var(--pink);
+    border-bottom: 3px solid var(--pink);
+}
+header .logo img {
+    width: 200px;
+    
+}
+header .navbar a {
+    font-size: 1.8rem;
+    padding: .5rem .8rem;
+    border: .1rem solid transparent;
+    color: var(--green);
+    font-weight: bold;
+}
+header .navbar a.active, header .navbar a:hover {
+    color: var(--pink);
+    border: .2rem solid var(--green);
+}
+header .icons i{
+    cursor: pointer;
+    margin-left: .3rem;
+    height: 3.2rem;
+    width: 3.2rem;
+    line-height: 3.2rem;
+    border-radius: 3rem;
+    background: var(--green);
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--white);
+    font-weight: bold;
+}
+header .icons i:hover {
+    background: var(--pink);
+    transform: rotate(360deg);
+}
+header .icons #men {
+    display: none;
+}
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: var(--white);
+    border: .3rem solid var(--green);
+    background: transparent;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--green);
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: .5s ease-in;
+}
+.btn:hover.btn::before {
+    left: 0;
+}
+/*Start Slider Section*/
+.home {
+    margin-left: 12rem;
+    margin-right: 9rem;
+    box-shadow: var(--box-shadow);
+}
+
+.home .home-slider .slide {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    z-index: 1;
+}
+.home .home-slider .slide1 {
+    background: url(1.jpg);
+    
+}
+.home .home-slider .slide2 {
+    background: url(2.jpg);
+}
+.home .home-slider .slide3 {
+    background: url(3.jpg);
+}
+.home .home-slider .slide4 {
+    background: url(4.jpg);
+}
+.home .home-slider .slide5 {
+    background: url(5.jpg);
+}
+.home .home-slider .slide6 {
+    background: url(6.jpg);
+}
+.home .home-slider .slide7 {
+    background: url(7.jpg);
+}
+.home .home-slider .slide1,
+.home .home-slider .slide2,
+.home .home-slider .slide3,
+.home .home-slider .slide4,
+.home .home-slider .slide5,
+.home .home-slider .slide6 {
+   background-size: cover;
+   background-repeat: no-repeat;
+} 
+.home .home-slider .slide .content {
+    text-align: center;
+    padding-left: 9rem;
+}
+.swiper-pagination-bullet {
+    background: var(--green) !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 15px !important;
+}
+/*End Slider Section*/
+
+/*Start Items Section*/
+section {
+    padding: 8rem 9% 3rem;
+}
+.heading {
+    text-align: center;
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 500;
+    padding: .5rem 2rem;
+    margin-bottom: 4rem;
+    background: var(--green);
+    display: inline-block;
+    /*margin-top: .2rem;*/
+    border-radius: 2px;
+}
+.heading .line {
+    width: 50px;
+    height: 30px;
+    color: black;
+}
+.welcome .box-container {
+    display: flex;
+    gap: 2rem;
+}
+.welcome .box-container .box {
+    width: 33%;
+    background: var(--pink);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding-bottom: 1%;
+}
+.welcome .box-container .box .image {
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.welcome .box-container .box .image:hover img {
+    transform: scale(1.1);
+}
+.welcome .box-container .box .content h1{
+    color: var(--white);
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+/*End Items Section*/
+
+/*Start Birthday Section*/
+
+/*
+.birthday {
+    padding: 1rem 0 1rem 0;
+}
+*/
+.birthday .slides  {
+background: url(bir.jpg);
+opacity: 0.7;
+height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+box-shadow: var(--box-shadow);
+}
+.birthday .content {
+    text-align: center;
+    padding-left: 6rem;
+}
+
+.birthday .content h3 {
+    color: var(--white);
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    font-family: 300;
+}
+.birthday .content h1 {
+    color: var(--green);
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.birthday .content p {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.birthday .content h1 span {
+    color: var(--pink);
+}
+/*End Birthday Section*/
+
+/*Start widding section*/
+.widding .slides {
+background: url(wid.png);
+height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+box-shadow: var(--box-shadow);
+}
+.widding .content {
+    text-align: center;
+    padding-right: 6rem;
+}
+
+.widding .content h3 {
+    color: rgb(139, 0, 0);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: 300;
+}
+.widding .content h1 {
+    color: var(--green);
+    font-size: 7rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.widding .content p {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: rgb(105, 15, 15);
+}
+.widding .content h1 span {
+    color: var(--pink);
+}
+.widding .content  .b {
+    color: var(--pink);
+}
+.widding .content  .b:hover {
+    color: var(--white);
+}
+
+/*Best Selling*/
+.best-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(32rem, 1fr));
+    gap: 1.5rem;
+    height: 78vh;
+    overflow: hidden;
+    
+}
+.selling {
+    position: relative;
+    max-width: 1200px;
+}
+.selling i {
+height: 40px;
+width: 40px;
+cursor: pointer;
+font-size: 2rem;
+position: absolute;
+top: 65%;
+transform: translateY(-50%);
+transform: translateX(-115%);
+background: var(--white);
+text-align: center;
+color: var(--green);
+list-style: none;
+line-height: 46px;
+border-radius: 50%;
+}
+.selling i:hover {
+    background: var(--green);
+    color: var(--white);
+    height: 43px;
+    width: 43px;
+    transition: .5s ease-in-out;
+}
+.selling i:first-child{
+    left: -90px;
+    
+}
+.selling i:last-child{
+    right: 15px;
+}
+.best-items .item .image img {
+    width: 100%;
+    object-fit: cover;
+    
+    
+}
+.best-items .item {
+    position: relative;
+    z-index: 2;
+    /*
+    overflow: hidden;
+    */
+    border-radius: 5px;
+    
+}
+.best-items .item:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+.best-items .item:hover.item:before {
+    display: block;
+}
+.best-items .item .best-info {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    z-index: 10;
+    align-items: center;
+    transition: 1s;
+}
+.best-items .item .best-info h3 {
+    font-size: 1.7rem;
+    color: var(--white);
+    text-align: center;
+    padding: .8rem 0;
+    text-transform: uppercase;
+}
+.best-items .item .best-info a {
+    align-items: center;
+}
+.best-items .item:hover .best-info {
+    top: 0;
+}
+
+.swiper-navBtn {
+
+position: absolute;
+top: 70% !important;
+}
+.swiper-navBtn:hover {
+    color: var(--white) !important;
+}
+.organizing {
+    padding-left: 0;
+    padding-right: 0;
+}
+.organizing .container {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient( 115deg, rgba(115, 115, 115, 0.4), rgba(193, 193, 193, 0.2) ), url(part.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btn-re  {
+    display: flex;
+    justify-content: center;
+}
+.organizing .container  {
+   display: flex;flex-direction: column;
+   justify-content: center;
+  
+  
+}
+.organizing .container h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--white);
+    font-family: var(--heading);
+    margin-bottom: 2rem;
+
+}
+.order .container {
+    background: var(--white);
+    height: 90vh;
+    border: 6px solid var(--green);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+}
+.order .container h1 {
+    color: var(--pink);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    font-family: var(--heading);
+    font-size: 6rem;
+}
+.order .container img {
+    margin-bottom: 4rem;
+}
+.order .container h4 {
+    color: var(--green);
+    margin-bottom: 3rem;
+    font-family: var(--heading);
+    font-size: 3rem;
+}
+.order .container h4 span {
+    color: var(--pink);
+}
+.order .container h3 {
+    color: var(--pink);
+    font-family: var(--heading);
+    font-size: 4rem;
+}
+.order .container h3 span {
+    color: var(--green);
+}
+.footer {
+    background: var(--pink);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    text-align: center;
+    color: var(--white);
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30rem, 2fr));
+    gap: 1rem;
+    padding: 5rem 0 0;
+    border-bottom: 2px solid var(--green);
+    
+}
+.footer .container div {
+    padding: 2rem 0;
+}
+.footer .container ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.footer .container ul li a {
+    padding: 1rem;
+    background: var(--white);
+    border-radius: 50%;
+    color: var(--green);
+    margin-left: 10px;
+    font-size: 24px;
+}
+.footer .container ul li a:hover {
+    background: var(--green);
+    color: var(--white);
+    transform: scale();
+}
+.footer .container h1 {
+    font-size: 5rem;
+    margin: 3.5rem  0 3.5rem;
+    font-family: var(--heading);
+}
+.footer .container p {
+    color: #767676;
+    margin-bottom: 1.7rem;
+    font-size: 1.5rem;
+}
+.footer .container div .contact {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--heading);
+}
+.footer .container div .contact:hover {
+    color: var(--green);
+    font-size: 2.3rem;
+}
+.footer .footer-logo {
+    width: 90%;
+    margin-top: 0;
+    padding-top: 0;
+}
+.footer .head {
+    display: block;
+    color: #767676;
+    font-size: 2rem;
+    margin-top: .5rem;
+    font-weight: 500;
+    font-family: var(--heading2);
+}
+/*custom scroll bar*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: var(--green);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--pink);
+}
+/*Jump to top*/
+.topbtn {
+    position: fixed;
+    right: 2%;
+    top: 90%;
+    bottom: 20%;
+    width: 40px;
+    height: 40px;
+   border-radius: 50%;
+    background: var(--green);
+    
+    color: var(--white);
+    cursor: pointer;
+}
+.topbtn i {
+    font-size: 3rem;
+}
+.about {
+    background: var(--white);
+    border: 2px solid var(--pink);
+    margin: 5rem;
+}
+.aboutus {
+    padding: 0;
+}
+.about .container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.about .container .container-info h1 {
+
+font-family: var(--heading);
+color: var(--green);
+font-size: 8rem;
+margin-bottom: 2rem;
+}
+.about .container .container-info h3 {
+    color: var(--pink);
+    font-family: var(--heading1);
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.about .container .container-info p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: var(--heading2);
+    margin-right: 4rem;
+}
+.about .container .container-image img {
+    border-radius: 50%;
+}
+
+.aboutus .container {
+    height: 90vh;
+    display: flex;
+    box-shadow: var(--box-shadow);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( 115deg, rgba(16, 16, 16, 0.8), rgba(193, 193, 193, 0.7) ), url(shop4.jpg);
+
+}
+.aboutus .container  p{
+font-family: var(--heading1);
+font-size: 2.5rem;
+color: var(--white);
+margin-left: 8rem;
+margin-right: 8rem;
+}
+.team {
+    margin-bottom: 8rem;
+}
+.team .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.team .container .item .image img {
+    width: 100%;
+    height: 80vh;
+    border-radius: 110%;
+}
+.team .container .item  .chef-info h3 {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    color: var(--green);
+    font-family: var(--heading);
+    margin-bottom: 2rem;
+}
+.team .container .item  .chef-info h4 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--heading1);
+    color: var(--pink);
+    margin-bottom: 4rem;
+}
+/*Start Wedding page */
+.wedding {
+background: url(events5.jpg);
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.wedding .container {
+    display: flex;
+    justify-content: center;
+   
+}
+.wedding .container h1 {
+    align-items: center;
+    text-align: center;
+    color: var(--green);
+    font-family: var(--heading);
+    font-size: 16rem;
+    margin-top: 5rem;
+}
+
+.infor .container {
+    display: block;
+    margin-top: 2rem;
+}
+.infor .container p {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-family: var(--heading1);
+}
+.pricing {
+    padding: 0;
+}
+.pricing  {
+    /*
+    background-image: linear-gradient( 115deg, rgba(216, 216, 216, 0.4), rgba(201, 201, 201, 0.4) ), url(wall7.jpg);
+    */
+    background: var(--white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*
+    border-radius: 30px;
+    */
+}
+.pricing .container .content {
+    display: flex;
+}
+.pricing .container .pricing-info {
+    width: 57%;
+}
+.pricing .container .pricing-info p {
+    font-size: 2.3rem;
+    font-family: var(--heading);
+    margin: 3rem 6rem 3rem 4rem;
+    padding-right: 3rem;
+}
+.pricing .container .pricing-info a {
+    color: var(--green);
+    font-size: 2.4rem;
+    font-family: var(--heading);
+    font-weight: 800;
+    text-decoration: underline;
+}
+.pricing .container .pricing-info a:hover {
+    font-size: 2.6rem;
+    transition: all;
+    color: var(--pink);
+}
+.pricing .container .pricing-img {
+    width: 35%;
+    align-items: center;
+}
+.pricing .container .pricing-img img {
+    width: 100%;
+    border-radius: 5px;
+    margin: 7rem 2rem 3rem 2rem;
+    overflow: hidden;
+}
+.tasting {
+    padding: 0;
+}
+.tasting {
+    padding: 5rem;
+    /*
+    background-image: linear-gradient( 115deg, rgba(216, 216, 216, 0.2), rgba(201, 201, 201, 0.2) ), url(wall6.jpg);
+    */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*
+    border-radius: 100px;
+    */
+    background: var(--pinktwo);
+}
+.tasting .container p {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    line-height: 1.8;
+}
+.tasting .container p a {
+    font-family: var(--heading);
+    color: var(--white);
+    font-weight: 800;
+    font-size: 2.3rem;
+}
+.tasting .container p a:hover {
+    font-size: 2.5rem;
+}
+.tasting .container .noting {
+    color: var(--white2);
+    font-family: var(--heading);
+    font-size: 3rem;
+}
+.tasting .container  .end {
+    color: var(--white2);
+    font-family: var(--heading);
+    font-size: 2.5rem;
+}
+
+.reservation .holder {
+    display: flex;
+    /*width: 100%;*/
+    flex-wrap: wrap;
+}
+.reservation .form {
+    background: #25211E;
+    width: 55%;
+    padding: 3rem 0;
+}
+.reservation .form-holder {
+    display: block;
+    width: 100%;
+}
+.reservation .form-holder label {
+margin: 1rem 1rem 2rem;
+    font-size: 1.8rem;
+    font-family: var(--heading);
+    color: white;
+}
+.reservation .form-holder input {
+    margin: 2rem 0;
+    background: var(--white);
+    height: 9vh;
+    font-size: 2.5rem;
+    text-transform: none;
+    border: 3px solid var(--green);  
+}
+.reservation .form-holder textarea {
+    border: 3px solid var(--green); 
+}
+.reservation .form-holder textarea:focus {
+    border: 5px solid var(--pink);
+}
+.reservation .form-holder input:focus{
+    border: 5px solid var(--pink);
+}
+.reservation .form-holder .divide {
+    display: flex; 
+}
+.reservation .form-holder .divide div {
+    display: block;
+    margin-left: 2rem;
+}
+.reservation .image {
+    width: 45%;
+    background: url(reserve9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 9rem;
+}
+
+
+.message {
+    background: var(--white);
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+.field10 {
+    padding-left: 2rem;
+}
+/*End Wedding page */
+
+
+/*Start widding section*/
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 1rem 2rem;
+    }
+    header .logo img {
+        width: 100px;
+    }
+    .best-items {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        height: 100%;
+    }
+    
+    .welcome .box-container .box {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .selling {
+        position: relative;
+        max-width: 1200px;
+    }
+    .selling i {
+    top: 65%;
+    transform: translateY(-120%);
+    transform: translateX(-130%);
+    }
+    .selling i:first-child{
+        left: -90px; 
+    }
+    .selling i:last-child{
+        right: -25px;
+    }
+    .footer .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 5rem 0 5rem;
+        border-bottom: 2px solid var(--green);
+        
+    }
+    .footer .footer-logo {
+        width: 60%;
+        
+    }
+    .about {
+       
+        background: var(--white);
+        border: 2px solid var(--pink);
+        margin: 5rem 2.5rem 2.5rem 2.5rem;
+    }
+    .about .container {
+    display: block;
+    ;
+    }
+    .about .container .container-info h1 {
+    
+    font-family: var(--heading);
+    color: var(--green);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    }
+    .about .container .container-info h3 {
+        color: var(--pink);
+        font-family: var(--heading1);
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .about .container .container-info p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-family: var(--heading2);
+        margin-right: 2rem;
+    }
+    .about .container .container-image img {
+       display: none;
+    }
+    .aboutus .container {
+        display: flex;
+        box-shadow: var(--box-shadow);
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+    
+    }
+    .aboutus .container  p{
+    font-family: var(--heading1);
+    font-size: 2rem;
+    color: var(--white);
+    margin-left: 4rem;
+    margin-right: 4rem;
+    }
+    .team {
+        margin-bottom: 10rem;
+    }
+    .team .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        
+    }
+    
+    .team .container .item .image img {
+        width: 70%;
+        height: 120vh;
+        border-radius: 110%;
+        margin-left: 9rem;
+       
+    }
+    .team .container .item  .chef-info h3 {
+        text-align: center;
+        font-size: 6rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .team .container .item  .chef-info h4 {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+    .pricing .container .content {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing .container .pricing-info {
+        width: 100%;
+    }
+    .pricing .container .pricing-img {
+        width: 100%;
+    }
+    .pricing .container .pricing-img img {
+        width: 75%;
+        justify-content: center;
+    }
+    .reservation .image {
+        width: 35%;
+    }
+    .reservation .form {
+        width: 65%;
+    }
+    .reservation .form-holder input {
+        width: 90%;
+    }
+    
+}
+@media (max-width: 768px) {
+    header {
+        top: 2rem;
+        height: 40px;
+        margin-top: 1rem;
+    }
+    header .logo img {
+        width: 100px;
+    }
+    header .icons #men {
+        display: inline-block;
+    }
+    header .navbar {
+        position: absolute;
+        top: 150%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-top: .1rem solid rgba(205, 170, 124, 0.2);
+        border-bottom: .1rem solid rgba(205, 170, 124, 0.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a {
+        display: block;
+        padding: 1.3rem;
+        margin: .8rem;
+        font-size: 2rem;
+        color: var(--white);
+        background: var(--green);
+    }
+    header .navbar a:hover {
+        background: var(--pink);
+        color: var(--white);
+    }
+    .home .home-slider .slide {
+        justify-content: center;
+        height: 80vh;
+    }
+    .home .home-slider .slide .content {
+        padding: 0;
+    }
+    .home {
+        margin-left: 0;
+        margin-right: 0;
+        box-shadow: var(--box-shadow);
+    }
+    /*welcome section*/
+    /*
+    .welcome .box-container {
+        flex-wrap: wrap;
+        display: block;
+        gap: 2rem;
+    }
+        .welcome .box-container  .box{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    
+    .welcome .box-container {
+        flex-wrap: wrap;
+    }
+    .welcome .box-container .box {
+        width: 100%;
+    }
+    
+        */
+
+        .welcome .box-container {
+            flex-wrap: wrap;
+        } 
+        .birthday .slides {
+            background: url(bir2.jpg);
+            opacity: 0.8;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .birthday .content {
+            margin: 0 auto;
+        }
+        .widding .slides {
+            background: url(wid2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            opacity: 0.9;
+            grid-template-columns: 1fr;
+            justify-content: right;
+        }
+
+        .widding .content {
+            margin: 0 auto;
+            padding: 3rem;
+        }
+        .widding .content  .b {
+            color: var(--white);
+        }
+        .selling i {
+            top: 65%;
+            font-size: 1.5rem;
+            text-align: center;
+            transform: translateY(-115%);
+            transform: translateX(-98%);
+            }
+            .selling i:first-child{
+                left: -90px; 
+            }
+            .selling i:last-child{
+                right: -40px;
+                z-index: 15;
+            }
+            .order .container h1 {
+                font-size: 4.5rem;
+                margin-bottom: 8rem;
+                margin-top: 3rem;
+            }
+            .order .container h3 {
+                font-size: 2.5rem;
+                
+            }
+            .order .container h4 {
+                font-size: 2rem;
+                margin-bottom: 4rem;
+            }
+            .order .container a img  {
+                width: 100%;
+                margin-bottom: 7rem;
+            }
+            .team .container .item .image img {
+                width: 100%;
+                height: 120vh;
+                border-radius: 110%;
+                margin-left: 1rem;
+               
+            }
+            .wedding .container h1 {
+                font-size: 12rem;
+            }
+            .reservation .image {
+                display: none;
+            }
+            .reservation .holder {
+                display: block;
+            }
+            .reservation .form {
+                width: 100%;
+            }
+            .reservation .form-holder .divide {
+                display: block;
+            }
+            .reservation .form-holder input {
+                width: 90%;
+                
+            }
+}
